@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #ddd;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	
+	position: relative;
+}
+
+.lock-image {
+	width: 390px;
+	height: 844px;
+	display: block;
+}
+form {
+	position: absolute;
+	top: 440px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+input[type="submit"] {
+	width: 200px;
+	height: 80px;
+
+	border: none;
+	background-color: white;
+
+	font-size: 40px;
+	font-weight: bold;
+
+	cursor: pointer;
+}

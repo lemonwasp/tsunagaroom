@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* ------------------------------
+   画面全体
+------------------------------ */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+	/* 画面中央配置 */
+	display: flex;
+	justify-content: center;
+
+	/* スクロール禁止 */
+	overflow: hidden;
+}
+
+/* ------------------------------
+	   フォーム
+	------------------------------ */
+form {
+	margin: 0;
+	padding: 0;
+}
+
+/* 起動画面 */
+.start-screen {
+
+	/* Figmaサイズ */
+	width: 390px;
+	height: 844px;
+
+
+	/* 中央配置 */
+	margin: 0 auto;
+
+	/* ボタンの初期装飾を消す */
+	border: none;
+	padding: 0;
+	display: block;
+
+	/* 背景画像 */
+	background-image: url("../img/title.png");
+
+	/* 画像を画面いっぱいに表示 */
+	background-size: 100% 100%;
+
+	/* 中央基準 */
+	background-position: center;
+
+	/* 繰り返しなし */
+	background-repeat: no-repeat;
+
+	/* クリック可能 */
+	cursor: pointer;
+}

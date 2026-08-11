@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/* ------------------------------
+   画面全体
+------------------------------ */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ------------------------------
+   ホーム画面
+------------------------------ */
+.senior-home {
+
+	width: 390px;
+	height: 844px;
+
+	margin: 0 auto;
+
+	background-image: url("../img/senior_background_home.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	position: relative;
+}
+
+/* ------------------------------
+   ヘッダー
+------------------------------ */
+.senior-header {
+
+	width: 390px;
+	height: 91px;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+
+/* ロゴ */
+.senior-header-logo {
+
+	width: 390px;
+	height: auto;
+
+	display: block;
+}
+
+/* ------------------------------
+   ようこそ
+------------------------------ */
+.welcome-text {
+
+	text-align: center;
+
+	font-size: 24px;
+	font-weight: bold;
+
+	color: #8D63F5;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* ------------------------------
+   ボタン共通
+------------------------------ */
+.image-button {
+
+	display: block;
+
+	margin: 0 auto;
+
+	border: none;
+	background: none;
+
+	padding: 0;
+
+	cursor: pointer;
+}
+
+/* ボタン画像 */
+.image-button img {
+
+	display: block;
+
+	width: 280px;
+	height: auto;
+}
+
+/* ------------------------------
+   動画を見る
+------------------------------ */
+.watch-button {
+
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+
+/* ------------------------------
+   動画を撮って送る
+------------------------------ */
+.send-button {
+
+	margin-bottom: 5px;
+}
+
+/* ------------------------------
+   撮影回数
+------------------------------ */
+.count-text {
+
+	text-align: center;
+
+	color: #8D63F5;
+
+	font-size: 20px;
+	font-weight: bold;
+
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+/* ------------------------------
+   ボタン押下時
+------------------------------ */
+.image-button:hover {
+
+	opacity: 0.9;
+}
+
+.image-button:active {
+
+
+	transform: scale(0.98);
+}
+
+
+
+/* ------------------------------
+   ヘッダークリック範囲
+------------------------------ */
+.family-header {
+	position: relative;
+
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 左の家 */
+.header-home {
+	position: absolute;
+	left: 40px;
+	top: 20px;
+	width: 45px;
+	height: 45px;
+	margin: 0;
+}
+
+/* 右の家 */
+.header-family {
+	position: absolute;
+	left: 120px;
+	top: 20px;
+	width: 45px;
+	height: 45px;
+	margin: 0;
+}
+
+/* 「つながるーむ」 */
+.header-title {
+	position: absolute;
+	left: 200px;
+	top: 20px;
+	width: 150px;
+	height: 34px;
+	margin: 0;
+}
+
+.header-submit {
+	width: 100%;
+	height: 100%;
+
+	border: none;
+	background-color: transparent;
+
+	padding: 0;
+	margin: 0;
+
+	font-size: 0;
+	color: transparent;
+
+	cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+}

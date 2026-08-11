@@ -1,0 +1,57 @@
+# Eclipse workspace / generated files
+.metadata/
+.recommenders/
+.externalToolBuilders/
+.loadpath
+bin/
+build/
+target/
+tmp/
+*.class
+*.war
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Server settings
+/Servers/
+
+# Local config / secrets
+local.properties
+*.launch
+.factorypath
+.env
+.env.*
+!.env.example
+
+# Runtime-generated media
+/src/main/webapp/video/*
+!/src/main/webapp/video/.gitkeep
+
+# Plugin-specific
+.pydevproject
+.cproject
+.autotools
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.apt_generated/
+.apt_generated_test/
+.cache-main
+.scala_dependencies
+.worksheet
+
+# Other IDEs
+.idea/
+*.iml
+.vscode/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

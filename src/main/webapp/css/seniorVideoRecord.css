@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+/* =========================
+   画面全体
+========================= */
+body {
+	margin: 0;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: #ddd;
+}
+
+/* =========================
+   スマホ画面領域
+========================= */
+.screen {
+	width: 390px;
+	height: 844px;
+
+	margin: 0 auto;
+
+	background-image: url("../img/senior_background_home.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/* =========================
+   ヘッダー
+========================= */
+.header {
+	position: relative;
+	width: 100%;
+	height: 88px;
+
+	background-image: url("../img/senior_hedder.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* =========================
+   ヘッダークリック範囲
+========================= */
+.header-click-left,
+.header-click-right {
+	position: absolute;
+	top: 0;
+
+	width: 100%;
+	height: 88px;
+	margin: 0;
+	padding: 0;
+
+	display: block;
+
+	border: none;
+	background: transparent;
+
+	z-index: 10;
+}
+
+/* 左側：ロゴ側 */
+.header-click-left {
+	left: 0;
+}
+
+/* 右側：つながるーむ側 */
+.header-click-right {
+	right: 0;
+}
+
+/* 透明ボタン */
+.header-submit {
+	width: 100%;
+	height: 88px;
+
+	display: block;
+
+	margin: 0;
+	padding: 0;
+
+	border: none;
+	outline: none;
+
+	background-color: transparent;
+	background-image: none;
+
+	color: transparent;
+	font-size: 0;
+	line-height: 0;
+
+	cursor: pointer;
+
+	opacity: 0;
+
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+/* =========================
+   メイン領域
+========================= */
+.main {
+	text-align: center;
+}
+
+/* =========================
+   録画時間表示
+   黒い背景なしで、赤丸と時間だけ表示
+========================= */
+.record-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 15px 0;
+}
+
+/* =========================
+   録画中マーク
+   初期状態では点滅しない
+========================= */
+.record-dot {
+	width: 20px;
+	height: 20px;
+
+	background-color: red;
+	border-radius: 50%;
+
+	margin-right: 12px;
+}
+
+/* =========================
+   はじめる押下後だけ点滅
+========================= */
+.record-dot.recording {
+	animation: blink 1s infinite;
+}
+
+/* =========================
+   点滅アニメーション
+========================= */
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.3;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* =========================
+   録画時間
+========================= */
+#recordTime {
+	color: red;
+
+	font-size: 34px;
+	font-weight: 700;
+
+	font-family: Arial, sans-serif;
+
+	letter-spacing: 1px;
+}
+
+/* =========================
+   カメラ表示エリア
+========================= */
+.camera-area {
+	width: 315px;
+	height: 430px;
+
+	margin: 12px auto 30px auto;
+
+	overflow: hidden;
+}
+
+#camera {
+	width: 100%;
+	height: 100%;
+
+	display: block;
+
+	object-fit: cover;
+}
+
+/* =========================
+   ボタン共通
+   開始・終了・戻る
+========================= */
+.start-btn,
+.stop-btn,
+.back-btn {
+	width: 235px;
+	height: 54px;
+
+	display: block;
+
+	margin: 0 auto 18px auto;
+
+	border: none;
+	padding: 0;
+
+	background-color: transparent;
+
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	cursor: pointer;
+}
+
+/* =========================
+   開始ボタン
+========================= */
+.start-btn {
+	background-image: url("../img/senior_button_start.png");
+}
+
+/* =========================
+   終了ボタン
+========================= */
+.stop-btn {
+	background-image: url("../img/senior_button_finish.png");
+}
+
+/* =========================
+   戻るボタン
+========================= */
+.back-btn {
+	background-image: url("../img/senior_button_back.png");
+}
+
+/* =========================
+   非表示用
+========================= */
+.hidden {
+	display: none;
+}
+
+/* =========================
+   動画送信完了メッセージ
+========================= */
+.complete-message {
+	text-align: center;
+
+	font-size: 30px;
+	font-weight: normal;
+
+	color: #7841DC;
+
+	margin-top: 120px;
+	margin-bottom: 20px;
+
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+/* =========================
+   送信完了ロゴ
+========================= */
+.complete-logo {
+	width: 280px;
+	height: 280px;
+
+	margin: 0 auto 45px auto;
+
+	background-image: url("../img/senior_logo_send.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* =========================
+   OKボタン
+========================= */
+.ok-btn {
+	width: 235px;
+	height: 54px;
+
+	display: block;
+
+	margin: -70px auto 0 auto;
+
+	border: none;
+
+	background-color: transparent;
+	background-image: url("../img/senior_button_ok.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	cursor: pointer;
+}
+
+/* =========================
+   撮影数上限画面
+========================= */
+.error-main {
+	text-align: center;
+}
+
+.error-title {
+	color: #7841DC;
+
+	font-size: 30px;
+	font-weight: bold;
+
+	margin-top: 170px;
+	margin-bottom: 20px;
+}
+
+.error-message {
+	color: #7841DC;
+
+	font-size: 30px;
+	font-weight: bold;
+
+	line-height: 1.35;
+
+	margin-bottom: 75px;
+}
+
+/* ------------------------------
+   ヘッダークリック範囲
+------------------------------ */
+.family-header {
+	position: relative;
+
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 左の家・ロゴ */
+.header-home {
+	position: absolute;
+	left: 35px;
+	top: 15px;
+	width: 60px;
+	height: 60px;
+	margin: 0;
+	z-index: 10;
+}
+
+/* 右の家 */
+.header-family {
+	position: absolute;
+	left: 115px;
+	top: 15px;
+	width: 60px;
+	height: 60px;
+	margin: 0;
+	z-index: 10;
+}
+
+/* つながるーむ */
+.header-title {
+	position: absolute;
+	left: 195px;
+	top: 18px;
+	width: 160px;
+	height: 45px;
+	margin: 0;
+	z-index: 10;
+}
+
+.header-submit {
+	width: 100%;
+	height: 100%;
+	display: block;
+
+	border: none;
+	background: transparent;
+
+	padding: 0;
+	margin: 0;
+
+	font-size: 0;
+	color: transparent;
+
+	cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+}
