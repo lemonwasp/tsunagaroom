@@ -1,5 +1,7 @@
 # つながるーむ (Connect Room)
 
+**English** | [日本語](README.ja.md)
+
 A Java/JSP web application designed to make asynchronous video communication easier between seniors and their families.
 
 > **Project context:** This was developed as a team training project. This repository is intended to document the implementation and design work for portfolio purposes. Individual contributions are identified below; publication of team/course assets should only be done when redistribution is permitted.
