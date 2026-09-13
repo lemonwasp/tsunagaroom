@@ -1,8 +1,10 @@
-# つながるーむ (Connect Room)
+# Tsunagaroom
 
 **English** | [日本語](README.ja.md)
 
-A Java/JSP web application designed to make asynchronous video communication easier between seniors and their families.
+A Java/JSP web application designed to make everyday asynchronous communication easier between older family members and the rest of their family.
+
+The core idea is simple: family members can share short video updates, while grandparents or other senior users can watch them when convenient and naturally send reactions back. By making regular updates easier to exchange, the service can also help families notice changes in day-to-day wellbeing without presenting itself as a medical or dedicated health-monitoring system.
 
 > **Project context:** This was developed as a team training project. This repository is intended to document the implementation and design work for portfolio purposes. Individual contributions are identified below; publication of team/course assets should only be done when redistribution is permitted.
 
@@ -16,6 +18,16 @@ A Java/JSP web application designed to make asynchronous video communication eas
 - Browse previously recorded videos
 - Store and display location history on a map
 - Display simple in-app notifications
+
+## Product purpose
+
+Tsunagaroom is built around three practical goals:
+
+1. **Make family updates easy to send.** Family members can share short videos without requiring everyone to be online at the same time.
+2. **Make responses natural for senior users.** Watching a family video can automatically trigger reaction recording, reducing the number of steps required to respond.
+3. **Make regular contact easier to maintain.** Frequent lightweight updates can give family members more context about an older relative's everyday condition and routine.
+
+This is a communication product, not a medical diagnosis or health-monitoring service.
 
 ## Core flow
 
